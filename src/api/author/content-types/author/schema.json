@@ -32,12 +32,18 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "social_links": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::social-link.social-link"
+    },
+    "greeting": {
+      "type": "string",
+      "required": true
     }
   }
 }

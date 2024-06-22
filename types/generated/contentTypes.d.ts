@@ -810,6 +810,7 @@ export interface ApiAuthorAuthor extends Schema.SingleType {
       'oneToMany',
       'api::social-link.social-link'
     >;
+    greeting: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
